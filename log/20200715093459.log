@@ -1,0 +1,3 @@
+[2020/7/15 11:11:50][ERROR][SFBtoX11.task][59] 运行发生错误，流程中止
+错误信息如下：
+SFBtoX11.task 第59行：Image Click Error 函数超时时间已到

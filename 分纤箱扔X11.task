@@ -1,0 +1,61 @@
+Import TURING
+Dim Temp_Data = ""
+Dim xlsobj = ""
+Dim List1 = []
+Dim data1 = 2
+Dim data2 = 1
+
+xlsobj = Excel.OpenExcel("C:\\Users\\Administrator\\Desktop\\SFB问题.xls",false)
+Do While true
+    Temp_Data = Excel.ReadCell(xlsobj,"First Sheet",[data1,3])
+    If Temp_Data = ""
+        Break
+    End If 
+    List1[data2] = Temp_Data
+    data1 = data1 + 1
+    data2 = data2 + 1
+Loop
+Excel.CloseExcel(xlsobj,false)
+For RL = 1 to Ubound(List1)
+    #icon("@res:jstvch1h-umfa-5gr9-ulbi-4u5makit6trg.png")
+    Image.Click({"wnd":[{"cls":"360se6_Frame","title":"中国移动外线资源管理系统 - 360安全浏览器 12.2","app":"360se"}]},{"height":0,"width":0,"x":0,"y":0},@res"jstvch1h-umfa-5gr9-ulbi-4u5makit6trg.png",0.9,"left","click",10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":-150,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"simulate","sMatchType":"GrayMatch","iSerialNo":1})
+    Keyboard.Press("A", "press", ["Ctrl"],{"iDelayAfter":300,"iDelayBefore":200,"sSimulate":"simulate"})
+    Keyboard.Press("Backspace", "press", [],{"iDelayAfter":300,"iDelayBefore":200,"sSimulate":"simulate"})
+    Keyboard.Input(List1[RL],{"iDelayAfter":300,"iDelayBefore":200,"sSimulate":"message"})
+    Keyboard.Press("Enter", "press", [],{"iDelayAfter":300,"iDelayBefore":200,"sSimulate":"simulate"})
+    Wait_Searching()
+    #icon("@res:u1n8qt16-upol-4g3g-tbn5-6uq1c94vq2mf.png")
+    Image.Click({"wnd":[{"cls":"360se6_Frame","title":"中国移动外线资源管理系统 - 360安全浏览器 12.2","app":"360se"}]},{"height":0,"width":0,"x":0,"y":0},@res"u1n8qt16-upol-4g3g-tbn5-6uq1c94vq2mf.png",0.9,"left","click",10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":20,"sKeyModifiers":[],"sSimulate":"simulate","sMatchType":"GrayMatch","iSerialNo":1})
+                        #icon("@res:a239bt1f-cn43-ld5j-dto3-at3spq383p9f.png")
+Image.Click({"wnd":[{"cls":"360se6_Frame","title":"中国移动外线资源管理系统 - 360安全浏览器 12.2","app":"360se"}]},{"height":0,"width":0,"x":0,"y":0},@res"a239bt1f-cn43-ld5j-dto3-at3spq383p9f.png",0.9,"left","click",10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"simulate","sMatchType":"GrayMatch","iSerialNo":1})
+    #icon("@res:b5l90d0s-r3uv-r1n7-665c-qtjt9skdvbv0.png")
+    Image.Click({"wnd":[{"cls":"360se6_Frame","title":"中国移动外线资源管理系统 - 360安全浏览器 12.2","app":"360se"}]},{"height":0,"width":0,"x":0,"y":0},@res"b5l90d0s-r3uv-r1n7-665c-qtjt9skdvbv0.png",0.9,"left","click",10000,{"bContinueOnError":false,"iDelayAfter":800,"iDelayBefore":500,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":250,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"simulate","sMatchType":"GrayMatch","iSerialNo":1})
+    Keyboard.Input("1111111",{"iDelayAfter":500,"iDelayBefore":200,"sSimulate":"message"})
+    Keyboard.Press("Down", "press", [],{"iDelayAfter":300,"iDelayBefore":500,"sSimulate":"simulate"})
+    Keyboard.Press("Enter", "press", [],{"iDelayAfter":500,"iDelayBefore":500,"sSimulate":"simulate"})
+    #icon("@res:i858urs3-46c3-7n10-drjg-l16da4m3e80s.png")
+    Image.Click({"wnd":[{"cls":"360se6_Frame","title":"中国移动外线资源管理系统 - 360安全浏览器 12.2","app":"360se"}]},{"height":0,"width":0,"x":0,"y":0},@res"i858urs3-46c3-7n10-drjg-l16da4m3e80s.png",0.9,"left","click",10000,{"bContinueOnError":false,"iDelayAfter":500,"iDelayBefore":500,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":250,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"simulate","sMatchType":"GrayMatch","iSerialNo":1})
+    Keyboard.Press("Down", "press", [],{"iDelayAfter":300,"iDelayBefore":500,"sSimulate":"simulate"})
+    Keyboard.Press("Enter", "press", [],{"iDelayAfter":300,"iDelayBefore":800,"sSimulate":"simulate"})
+    #icon("@res:p2b40p31-qmcb-ed4l-9o3i-lf3pbbugpec3.png")
+    Image.Click({"wnd":[{"cls":"360se6_Frame","title":"中国移动外线资源管理系统 - 360安全浏览器 12.2","app":"360se"}]},{"height":0,"width":0,"x":0,"y":0},@res"p2b40p31-qmcb-ed4l-9o3i-lf3pbbugpec3.png",0.9,"left","click",10000,{"bContinueOnError":false,"iDelayAfter":500,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":250,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"simulate","sMatchType":"GrayMatch","iSerialNo":1})
+    Keyboard.Press("Down", "press", [],{"iDelayAfter":300,"iDelayBefore":500,"sSimulate":"simulate"})
+    Keyboard.Press("Enter", "press", [],{"iDelayAfter":300,"iDelayBefore":200,"sSimulate":"simulate"})
+#icon("@res:3au9qn8s-fkpn-16ll-r1nn-vlc2os71qr6g.png")
+Image.Click({"wnd":[{"cls":"360se6_Frame","title":"中国移动外线资源管理系统 - 360安全浏览器 12.2","app":"360se"}]},{"height":0,"width":0,"x":0,"y":0},@res"3au9qn8s-fkpn-16ll-r1nn-vlc2os71qr6g.png",0.9,"left","click",10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"simulate","sMatchType":"GrayMatch","iSerialNo":1})
+        #icon("@res:2if4uk3v-qoav-qpm9-1gso-ci02f3a75e0k.png")
+    Image.Wait({"wnd":[{"cls":"360se6_Frame","title":"中国移动外线资源管理系统 - 360安全浏览器 12.2","app":"360se"}]},{"height":0,"width":0,"x":0,"y":0},@res"2if4uk3v-qoav-qpm9-1gso-ci02f3a75e0k.png",0.9,"show",10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":1,"bSetForeground":true,"sMatchType":"GrayMatch"})
+    #icon("@res:lthv1f9f-ncjg-a52p-076s-e2vs592r5krn.png")
+    Image.Click({"wnd":[{"cls":"360se6_Frame","title":"中国移动外线资源管理系统 - 360安全浏览器 12.2","app":"360se"}]},{"height":0,"width":0,"x":0,"y":0},@res"lthv1f9f-ncjg-a52p-076s-e2vs592r5krn.png",0.9,"left","click",10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"simulate","sMatchType":"GrayMatch","iSerialNo":1})
+Next
+
+Function Wait_Searching()
+    Dim Mouse_shape
+    Mouse_shape = TURING.FindMouseShape(0)
+    Do While Mouse_shape = 0
+        Mouse_shape = TURING.FindMouseShape(0)
+        Delay 100
+    Loop
+End Function
+
+
